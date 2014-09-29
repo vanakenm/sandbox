@@ -7,6 +7,10 @@ class Employee
   end
 
   def old?
+    a = 35
+
+    puts "Age: #{a}"
+
     age > 35
   end
 end
