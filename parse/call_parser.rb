@@ -6,9 +6,9 @@ class CallParser
   attr_accessor :method_defs, :classes, :calls, :root_node
 
   def initialize
-    @method_defs = {}
-    @calls = {}
-    @calls[nil] = []
+    @method_defs = {} 
+    @calls = {} 
+    @calls[nil] = [] 
     @method_defs[nil] = []
     @classes = []
     @current_class = nil
@@ -16,7 +16,7 @@ class CallParser
   end
 
   def filter
-    all_methods = @method_defs.values.flatten
+    all_methods = @method_defs.values.flatten 
     @calls.each { |inside_method, called_methods| @calls[inside_method] = called_methods & all_methods }
   end
 
@@ -25,8 +25,8 @@ class CallParser
   end
 
   def walk(node)
-    if(node.class == Parser::AST::Node)
-      if(node.type == :class)
+    if(node.class == Parser::AST::Node) 
+      if(node.type == :class) 
         @current_class = node.children.first.children[1]
 
         @method_defs[@current_class] = []
