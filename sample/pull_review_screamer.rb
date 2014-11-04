@@ -6,4 +6,10 @@ class TestTest
      puts "Done"
      puts "Finished"
   end
+
+  def hello
+  end
+
+  def caVaIci?
+  end
 end
