@@ -1,9 +1,9 @@
 class TestTest
   def build
     ["a","b","c"].each {|s|
-      p s unless s == "test"
+      puts s unless s == "test"
      }
-     p "Done"
-     p "Finished"
+     puts "Done"
+     puts "Finished"
   end
 end
