@@ -6,4 +6,5 @@ class NewClass
     p "Three mines"
 
     ary = [1,2,3]
+    ary2 = [4,5,6]
 end
