@@ -21,7 +21,9 @@ peter = Employee.new('Peter',55)
 anna = Employee.new('Anna',23)
 steve = Employee.new('Steve',77)
 
-employees = [bob, peter, anna, steve]
+employees = [bob,peter,anna,steve]
+
+employees.select{|e|e.old?}.map{|e|e.name}
 
 #1
 employees.select{|e|e.old?}.map{|e|e.name}
