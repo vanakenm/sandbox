@@ -24,8 +24,8 @@ steve = Employee.new('Steve',77)
 employees = [bob, peter, anna, steve]
 
 #1
-p employees.select{ |e| e.old? }.map{ |e| e.name }
+employees.select{ |e| e.old? }.map{ |e| e.name }
 #2
-p employees.select(&:old?).map{ |e| e.name }
+employees.select(&:old?).map{ |e| e.name }
 #3
-p employees.select(&:old?).map(&:name)
+employees.select(&:old?).map(&:name)
