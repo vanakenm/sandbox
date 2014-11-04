@@ -4,5 +4,6 @@ class TestTest
       p s unless s == "test"
      }
      p "Done"
+     p "Finished"
   end
 end
