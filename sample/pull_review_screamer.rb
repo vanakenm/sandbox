@@ -8,8 +8,14 @@ class TestTest
   end
 
   def hello
+    info = "info"
+    info = "#{info}-with update"
+    return info * 3
   end
 
   def caVaIci?
+    info = "info"
+    info = "#{info}-with update"
+    return info * 3
   end
 end
