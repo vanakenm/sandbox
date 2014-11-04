@@ -16,4 +16,12 @@ class TestTest
       p s unless s == 'test'
      }
   end
+
+  def even_better
+    a = "a"
+    b = "b"
+    ab = "#{a}#{b}"
+    c = "c"
+    abc = "#{ab}#{c}"
+  end
 end
